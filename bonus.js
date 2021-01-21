@@ -10,7 +10,7 @@ function makeResponsive() {
       }
 
     //set svg params
-    var svgWidth = window.innerWidth - 150;
+    var svgWidth = window.innerWidth - 200;
     var svgHeight = window.innerHeight;
 
 
@@ -252,7 +252,7 @@ function makeResponsive() {
 
         var healthcareLabel = ylabelsGroup.append("text")
             .attr("transform","rotate(-90)")
-            .attr("y", 0 - 20)
+            .attr("y", -22)
             .attr("x", 0 - (chartHeight / 2))
             .attr("value", "poverty") // value to grab for event listener
             .classed("active", true)
@@ -260,7 +260,7 @@ function makeResponsive() {
 
         var smokesLabel = ylabelsGroup.append("text")
             .attr("transform","rotate(-90)")
-            .attr("y", 0 - 40)
+            .attr("y", -42)
             .attr("x", 0 - (chartHeight / 2))
             .attr("value", "smokes") // value to grab for event listener
             .classed("inactive", true)
@@ -268,7 +268,7 @@ function makeResponsive() {
 
         var obesityLabel = ylabelsGroup.append("text")
             .attr("transform","rotate(-90)")
-            .attr("y", 0 - 60)
+            .attr("y", -62)
             .attr("x", 0 - (chartHeight / 2))
             .attr("value", "obesity") // value to grab for event listener
             .classed("inactive", true)
