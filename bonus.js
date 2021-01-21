@@ -158,7 +158,7 @@ function makeResponsive() {
     }
 
     //load data from csv file
-    d3.csv("assets/data/data.csv").then(function(healthData, err) {
+    d3.csv("data/data.csv").then(function(healthData, err) {
         if (err) throw err;
 
         //print data in console
